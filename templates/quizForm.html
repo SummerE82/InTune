@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+ 
+     
+     <div class="text-center">
+     <form method="POST" action="/Personality">
+         <p> What may seem like simple questions can often tell the most about a 
+     person. Take the quiz below to find out more about your personality. Please answer every question.  </p>
+         <ol>
+             {% for i in q %}
+                <div class="question">
+                   <li> What is your <u> {{i}}</u> ?</li>
+                    {% for j in q[i] %}
+                      <input type='radio' value='{{j}}' name='{{i}}'/>{{j}}
+                    {% endfor %}
+                </div>
+             {% endfor %}  
+         </ol>
+         <input type="submit" value="submit"/>
+         </form>
+        
+    </div>
+{% endblock content %}

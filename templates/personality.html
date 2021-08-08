@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% block content %}
+
+ {% if a == 'With Family' %}
+    <div id="upbeat">
+        <h2> Happy by Pharrell </h2> 
+        <audio src="static/Happy.wav" type="audio/x-wav" controls autoplay="autoplay">
+        <p>Your browser does not support the audio element </p>
+        <source src="static/Happy.wav">
+        </audio>
+        <p>Happy.wav</p>
+        <p> Your personality is so warm and inviting. You bring joy to all those around you. Here's some more songs to check out:</p>
+        <li> Pocketful of Sunshine</li> 
+        <li> Bill Withers: Lovely Day</li> 
+        <li> Lizzo: Good as Hell</li>
+        <li> Justin Timberlake: Can't Stop the Feeling</li>
+    </div>
+ {% elif a == 'Alone' %}
+    <div id="Independent">
+        <h2> Marceline by Willow Smith </h2>
+         <audio src="static/Marceline.wav" type="audio/x-wav" controls autoplay="autoplay">
+        <p>Your browser does not support the audio element </p>
+        <source src="static/Marceline.wav">
+        </audio>
+        <p> Marceline.wav </p> 
+        <p> Your personality is strong and independent. You're comfortable being on your own caught up in your own thoughts. Here's some more songs to check out: </p>
+        <li> Willow Smith: IDK</li> 
+        <li> Alessia Cara: Here</li>
+        <li> Lorde: Royals</li>
+        <li> Beyonce: Me, Myself and I </li>
+    </div>
+ {% elif a == 'With Friends' %}
+    <div id="socialButterfly">
+       <h2> Hey Ya! by OutKast </h2>
+         <audio src="static/HeyYa.wav" type="audio/x-wav" controls autoplay="autoplay">
+        <p>Your browser does not support the audio element </p>
+        <source src="static/HeyYa.wav">
+        </audio>
+        <p> HeyYa.wav</p>
+        <p> You are the life of the party! You love to hang with friends and make the most out of life. Here's some more songs to check out:</p>
+        <li> Whitney Houston: I Wanna Dance with Somebody</li>
+        <li> Mark Ronson: Uptown Funk</li>
+        <li> Jhene Aiko: Party for Me</li>
+        <li> Saweetie: Best Friend </li>
+    </div>
+ {% elif a == 'At Work' %}
+    <div id='Worker'>
+       <h2 style="color:white;"> Work by Rihanna</h2>
+         <audio src="static/Work.wav" type="audio/x-wav" controls autoplay="autoplay">
+        <p>Your browser does not support the audio element </p>
+        <source src="static/Work.wav">
+        </audio>
+        <p> Work.wav</p>
+        <p> You are a go getter. Your personality shines the brightest when you're working. Here's some more songs to checkout: </p>
+        <li> Wiz Khalifa: Work Hard Play Hard</li>
+        <li> Peter $un: Work</li>
+        <li> Michael Jackson: Workin' Day and Night</li>
+    </div>
+ {% endif %}
+     
+{% endblock content %}
